@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase – E‑Commerce</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f6f7fb;
+      color: #333;
+    }
+    header {
+      background-color: #111827;
+      color: #fff;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 24px; }
+    nav a {
+      color: #c7d2fe;
+      margin-left: 22px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a:hover { color: #fff; }
+
+    .hero {
+      background: linear-gradient(to right, #6366f1, #4f46e5);
+      color: #fff;
+      padding: 80px 40px;
+      text-align: center;
+    }
+    .hero h2 { font-size: 44px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; margin-bottom: 25px; }
+    .hero button {
+      padding: 12px 26px;
+      font-size: 16px;
+      background-color: #fff;
+      color: #4f46e5;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .container { padding: 60px 40px; }
+    .container h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #111827;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content { padding: 20px; }
+    .card-content h4 { margin: 0 0 10px; font-size: 20px; }
+    .card-content p { font-size: 14px; color: #666; }
+    .price { font-weight: bold; color: #4f46e5; margin: 10px 0; }
+    .card-content button {
+      padding: 10px 18px;
+      font-size: 14px;
+      background-color: #4f46e5;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .card-content button:hover { background-color: #3730a3; }
+
+    footer {
+      background-color: #111827;
+      color: #c7d2fe;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ShopEase</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Categories</a>
+      <a href="#">Cart</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Shop Smart, Live Better</h2>
+    <p>Discover amazing products at unbeatable prices</p>
+    <button>Start Shopping</button>
+  </section>
+
+  <section class="container">
+    <h3>Featured Products</h3>
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop" />
+        <div class="card-content">
+          <h4>Laptop</h4>
+          <p>High performance laptop for work & play</p>
+          <div class="price">₹65,000</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Smartphone" />
+        <div class="card-content">
+          <h4>Smartphone</h4>
+          <p>Latest generation smartphone</p>
+          <div class="price">₹32,000</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552231693" alt="Headphones" />
+        <div class="card-content">
+          <h4>Headphones</h4>
+          <p>Noise cancelling wireless headphones</p>
+          <div class="price">₹4,500</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Watch" />
+        <div class="card-content">
+          <h4>Smart Watch</h4>
+          <p>Track fitness and notifications</p>
+          <div class="price">₹7,999</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 ShopEase E‑Commerce | Happy Shopping!
+  </footer>
+
+</body>
+</html>
